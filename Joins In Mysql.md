@@ -132,15 +132,15 @@ Classic **anti-join pattern** using `LEFT JOIN` + `IS NULL`. A `LEFT JOIN` keeps
 ### Q6 — All Managers with Their Direct Reports (Including Managers with No Reports)
 
 ```sql
-SELECT m.employee_name AS managerName,
-       e.employee_name AS employeeName
-FROM employees m
-LEFT JOIN employees e ON m.employee_id = e.manager_id
-WHERE m.employee_id IN (
-    SELECT DISTINCT manager_id
-    FROM employees
-    WHERE manager_id IS NOT NULL
-);
+SELECT m.employee_name AS managerName, e.employee_name AS employeeName
+FROM employees m 
+LEFT JOIN employees e 
+ON m.employee_id = e.manager_id 
+WHERE m.employee_id IN(
+	SELECT DISTINCT employee_id
+	FROM employees 
+	WHERE manager_id IS NULL
+)
 ```
 
 **🔍 Explanation:**
