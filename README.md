@@ -95,6 +95,15 @@ Patterns the SQL 50 skips or only skims — the ones that actually come up in an
 |-----|-------|------|
 | 1 | Rolling sums: aggregate-then-window, `PARTITION BY` frames, `ROWS` vs `RANGE`, recursive date spines for gappy time series | [Bonus Set 1 — The Rolling Sum Pattern](bonus-problems/set-01-rolling-sum-pattern.md) |
 
+## 🏢 Company-Based Questions
+
+SQL questions candidates report from real interview rounds, grouped by company. Same format: dataset, expected output, solution, and the traps interviewers ask about.
+
+| Company | Focus | Link |
+|---------|-------|------|
+| Accenture | Latest login per country, never-sold products, pivot/unpivot, de-duplication, rolling averages + theory: `RANK` vs `DENSE_RANK`, `WHERE` vs `HAVING`, `DELETE`/`TRUNCATE`/`DROP` | [Accenture SQL Questions](company-based-questions/accenture_sql_questions.md) |
+| TCS | Nth highest salary, self-join managers, zero-count `LEFT JOIN`s, top-N per group, missing IDs with recursive CTE, cloning tables, two-way routes | [TCS SQL Questions](company-based-questions/tcs_sql_questions.md) |
+
 ## 🗂️ Repository Structure
 
 ```
@@ -129,6 +138,9 @@ mysql/
 │   └── set-05-strings-regex-and-set-operations.md
 ├── bonus-problems/       # Patterns the SQL 50 doesn't cover
 │   └── set-01-rolling-sum-pattern.md
+├── company-based-questions/  # Real interview questions by company
+│   ├── accenture_sql_questions.md
+│   └── tcs_sql_questions.md
 ├── assets/               # Diagrams & images
 │   ├── Indexing.png
 │   └── joins.png
