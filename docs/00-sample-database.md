@@ -1,3 +1,7 @@
+## SQL diagram
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/78977bc3-baab-4de1-9011-5b1a46e27213" />
+
+
 # employer_database — MySQL Dataset
 
 ## Database Setup
